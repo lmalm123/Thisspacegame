@@ -1,0 +1,21 @@
+print("===space game===")
+spaceship=100
+lazer=60
+rocket=40
+chocolate=50
+print("your were flying across the galaxy when you found something interesting do you investigate it? yes or no")
+
+choice =input("yes or no: ")
+if choice == "yes":
+    print("you went closer")
+    print("ITS AN ENEMY SHIP!")
+    print("it fired a lazer beam!")
+    spaceship -= lazer
+    print("your spaceship took damage!")
+    print("spaceship health:", spaceship)
+elif choice == "no":
+    print("you ran away!")
+    print("coward")
+else: 
+    print("invalid input")
+
